@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-#define TAM_HEAP 20
+#define TAM_HEAP 60
 #define TAM_ID 10
 
 typedef struct {
@@ -33,7 +33,7 @@ void exibir_areas_livres();
 void set_heap(const char* tipo);
 void novo(const char* id, int tamanho);
 void del(const char* id);
-void liberar_area(int inicio, int tamanho);
+void liberar_area(int inicio, int tamanho, int* ultimoIndice);
 void exibir_lista_variaveis();
 void atribui(const char* id1, const char* id2);
 
